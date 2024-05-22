@@ -18,6 +18,13 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 
 
+.container_pamp{
+    width: 394px;
+    height: 262px;
+ 
+
+}
+
  .ct-button {
     width: 236px;
     height: 80px;
@@ -52,8 +59,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
  
 
 /* image gauche canette*/
-.wp-image-15{ 
-  
+.laurier_home_gauche{
+
 }
 
 .wp-image-14.wp-image-14{
@@ -83,17 +90,43 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     position: relative; /* Ajoutez ceci si ce n'est pas déjà le cas */
 }
 
-.attachment-large.size-large.wp-image-20::after {
-    content: 'FRAISE';
+.attachment-large.size-large.wp-image-20::after 
+
+.txt_marc{
+    width: 196px;
+    height: 57px;
+}
+
+.container_canette_laurier{
+   display: flex;
+   width: auto;
+   height: auto;
+
+}
+
+.img_canette{
+    margin: 0%;
+    padding: 0;
+    position: relative;
+   
+}
+
+.img_laurier_gauche{
+    margin-right: 25%;
     position: absolute;
-    left: 50%;
-    right: 0;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 6em;
-    color: white;
-    opacity: 0.6;
-    font-weight: bold;
-    z-index: 2;
+
+}
+
+.img_laurier_droit{
+    margin-left: -75%;
+    position: absolute;
+   
+
+}
+
+
+/* Media query pour les tablettes */
+
+@media screen and (max-width: 768px) {
+    
 }
