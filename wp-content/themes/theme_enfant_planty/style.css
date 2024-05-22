@@ -10,3 +10,90 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+/* import de la font Syne depuis Google Fonts */
+
+  
+
+
+
+ .ct-button {
+    width: 236px;
+    height: 80px;
+}                                                                                   
+
+.elementor-widget-container p{
+    width: 497px;
+    height: 120px;
+   
+}
+
+.menu-item a:hover {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.menu-item {   
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.wp-block-heading{
+    font-size: 100px;
+    font-family: 'Syne';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+ 
+
+/* image gauche canette*/
+.wp-image-15{ 
+  
+}
+
+.wp-image-14.wp-image-14{
+   
+}
+
+/* image droite canette*/
+.wp-image-14{ 
+   
+}
+
+/* image canette */
+.wp-image-14{
+
+
+}
+
+.ct-footer{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 60px; 
+    
+}
+
+.elementor-widget-container {
+    position: relative; /* Ajoutez ceci si ce n'est pas déjà le cas */
+}
+
+.attachment-large.size-large.wp-image-20::after {
+    content: 'FRAISE';
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 6em;
+    color: white;
+    opacity: 0.6;
+    font-weight: bold;
+    z-index: 2;
+}
