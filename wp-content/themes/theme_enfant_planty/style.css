@@ -183,6 +183,21 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     padding: 0;
     margin: 0;
 }
+/*  Page commander */
+.container_produit{
+    width: 192px;
+    height: 128px;
+}
+
+.container_produit h5{
+    position: absolute;
+    max-width: 75%; /* Limite la largeur du texte pour s'adapter au conteneur */
+    top: 50%; /* Positionne le titre verticalement au centre */
+    left: 50%; /* Positionne le titre horizontalement au centre */
+    transform: translate(-50%, -50%); /* Centre parfaitement le titre */
+    margin: 0; /* Supprime les marges par défaut du titre */
+    overflow: hidden; /* Évite les débordements */
+}
 
 /*Media query pour les tablettes */
 
