@@ -74,19 +74,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     height: 57px;
 }
 
-#img_laurier_gauche {
-    position: relative; /* Utilisez relative si Elementor positionne déjà vos colonnes */
-    left: 125px; /* Ajustez selon la superposition voulue */
-}
-
-#img_canette {
-    position: relative; /* Adjust if your Elementor settings require a different value */
-}
-
-#img_laurier_droit {
-    position: relative;
-    right: 125px; /* Ajustez selon la superposition voulue */
-}
 
 
 .container_citron{
