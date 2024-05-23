@@ -30,11 +30,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     height: 80px;
 }                                                                                   
 
-.elementor-widget-container p{
-    width: 497px;
-    height: 120px;
-   
-}
+
 
 .menu-item a:hover {
     font-size: 13px;
@@ -58,25 +54,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
  
 
-/* image gauche canette*/
-.laurier_home_gauche{
-
-}
-
-.wp-image-14.wp-image-14{
-   
-}
-
-/* image droite canette*/
-.wp-image-14{ 
-   
-}
-
-/* image canette */
-.wp-image-14{
-
-
-}
 
 .ct-footer{
     display: flex; 
@@ -90,42 +67,137 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     position: relative; /* Ajoutez ceci si ce n'est pas déjà le cas */
 }
 
-.attachment-large.size-large.wp-image-20::after 
+
 
 .txt_marc{
     width: 196px;
     height: 57px;
 }
 
-.container_canette_laurier{
-   display: flex;
-   width: auto;
-   height: auto;
-
+#img_laurier_gauche {
+    position: relative; /* Utilisez relative si Elementor positionne déjà vos colonnes */
+    left: 125px; /* Ajustez selon la superposition voulue */
 }
 
-.img_canette{
-    margin: 0%;
-    padding: 0;
+#img_canette {
+    position: relative; /* Adjust if your Elementor settings require a different value */
+}
+
+#img_laurier_droit {
     position: relative;
-   
+    right: 125px; /* Ajustez selon la superposition voulue */
 }
 
-.img_laurier_gauche{
-    margin-right: 25%;
+
+.container_citron{
+    width: 393px;
+    height: 262px;
+}
+
+.container_framboise{
+    width: 393px;
+    height: 262px;
+}
+
+.container_pamplemousse{
+    width: 394px;
+    height: 263px;
+}
+
+.container_fraise{
+    width: 393px;
+    height: 262px;
+}
+
+.container_citron h6{
     position: absolute;
+    top: 50%; /* Positionne le titre verticalement au centre */
+    left: 50%; /* Positionne le titre horizontalement au centre */
+    transform: translate(-50%, -50%); /* Centre parfaitement le titre */
+    margin: 0; /* Supprime les marges par défaut du titre */
+} 
 
-}
-
-.img_laurier_droit{
-    margin-left: -75%;
+.container_fraise h6{
     position: absolute;
-   
+    top: 50%; /* Positionne le titre verticalement au centre */
+    left: 50%; /* Positionne le titre horizontalement au centre */
+    transform: translate(-50%, -50%); /* Centre parfaitement le titre */
+    margin: 0; /* Supprime les marges par défaut du titre */
+}
 
+.container_pamp h6{
+    position: absolute;
+    max-width: 95%; /* Limite la largeur du texte pour s'adapter au conteneur */
+    top: 50%; /* Positionne le titre verticalement au centre */
+    left: 50%; /* Positionne le titre horizontalement au centre */
+    transform: translate(-50%, -50%); /* Centre parfaitement le titre */
+    margin: 0; /* Supprime les marges par défaut du titre */
+    overflow: hidden; /* Évite les débordements */
+}
+
+.container_framboise h6{
+    position: absolute;
+    max-width: 75%; /* Limite la largeur du texte pour s'adapter au conteneur */
+    top: 50%; /* Positionne le titre verticalement au centre */
+    left: 50%; /* Positionne le titre horizontalement au centre */
+    transform: translate(-50%, -50%); /* Centre parfaitement le titre */
+    margin: 0; /* Supprime les marges par défaut du titre */
+    overflow: hidden; /* Évite les débordements */
 }
 
 
-/* Media query pour les tablettes */
+
+
+
+/* input email */
+
+#wpforms-206-field_1{
+    width: 500px;
+    height: 71px;
+    border-radius: 5px;
+}
+
+/* input nom */
+
+#wpforms-206-field_4{
+    width: 500px;
+    height: 71px;
+    border-radius: 5px;
+}
+
+/* input message */
+
+#wpforms-206-field_2{
+    width: 500px;
+    height: 237px;
+    border-radius: 5px;
+}
+
+/* bouton "envoyer du formulaire */
+
+#wpforms-submit-206{
+    width: 198px;
+    height: 55px;
+    background-color: #E0B9B4;
+    margin: 0 auto;
+    display: block;
+    
+}
+/* image sous le formulaire */
+
+.img_nouscontacter{
+    position: absolute;
+    top: 450px;
+    left: -615px;
+ 
+}
+
+.ct-container-full{
+    padding: 0;
+    margin: 0;
+}
+
+/*Media query pour les tablettes */
 
 @media screen and (max-width: 768px) {
     
