@@ -199,6 +199,72 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     overflow: hidden; /* Évite les débordements */
 }
 
+#input{
+    width: 39px;
+    height: 56px;
+}
+
+
+#wpforms-484-field_1{
+    width: 383px;
+    height: 71px;
+    min-width: 400px
+}
+
+
+#wpforms-484-field_2{
+    width: 383px;
+    height: 71px;
+    min-width: 400px;
+
+}
+
+#wpforms-484-field_3{
+    width: 383px;
+    height: 71px;
+    min-width: 400px
+}
+
+#wpforms-487-field_1{
+    width: 383px;
+    height: 71px;
+    min-width: 400px
+}
+
+#wpforms-487-field_2{
+    width: 383px;
+    height: 71px;
+    min-width: 400px
+}
+
+#wpforms-487-field_3{
+    width: 383px;
+    height: 71px;
+    min-width: 400px
+}
+
+#wpforms-submit-487{
+  display: none;
+}
+
+
+#wpforms-submit-484{
+    display: none;
+  }
+
+#button_commander{
+    width: 198px;
+    height: 55px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+  
 /*Media query pour les tablettes */
 
 @media screen and (max-width: 768px) {
