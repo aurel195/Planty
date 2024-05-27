@@ -132,6 +132,11 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     overflow: hidden; /* Évite les débordements */
 }
 
+.menu-item{
+    padding: 0%;
+    margin: 0%;
+    
+}
 
 
 
@@ -259,7 +264,16 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 }
 
 
+#wpforms-submit-568{
+    display: none;
+    
+  }
 
+#wpforms-568-field_3{
+    width: 39px;
+    height: 56px;  
+    min-width: 39px; 
+}
 
 
 
