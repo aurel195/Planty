@@ -14,67 +14,25 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 /* import de la font Syne depuis Google Fonts */
 
-  
-
-
-
-.container_pamp{
-    width: 394px;
-    height: 262px;
- 
-
-}
-
- .ct-button {
-    width: 236px;
-    height: 80px;
-}                                                                                   
-
-
+.ct-container-full{}
+/* Header */
 
 .menu-item a:hover {
     font-size: 13px;
     font-weight: 700;
 }
 
-
 .menu-item {   
     font-size: 16px;
     font-weight: 400;
 }
 
+/* Page Home */
 
-.wp-block-heading{
-    font-size: 100px;
-    font-family: 'Syne';
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 36px;
-}
-
- 
-
-
-.ct-footer{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 60px; 
-    
-}
-
-.elementor-widget-container {
-    position: relative; /* Ajoutez ceci si ce n'est pas déjà le cas */
-}
-
-
-
-.txt_marc{
-    width: 196px;
-    height: 57px;
-}
-
-
+.container_pamp{
+    width: 394px;
+    height: 262px;
+}                                                                
 
 .container_citron{
     width: 393px;
@@ -86,11 +44,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     height: 262px;
 }
 
-.container_pamplemousse{
-    width: 394px;
-    height: 263px;
-}
-
 .container_fraise{
     width: 393px;
     height: 262px;
@@ -98,48 +51,47 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 .container_citron h6{
     position: absolute;
-    top: 50%; /* Positionne le titre verticalement au centre */
-    left: 50%; /* Positionne le titre horizontalement au centre */
-    transform: translate(-50%, -50%); /* Centre parfaitement le titre */
-    margin: 0; /* Supprime les marges par défaut du titre */
-} 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+}
 
 .container_fraise h6{
     position: absolute;
-    top: 50%; /* Positionne le titre verticalement au centre */
-    left: 50%; /* Positionne le titre horizontalement au centre */
-    transform: translate(-50%, -50%); /* Centre parfaitement le titre */
-    margin: 0; /* Supprime les marges par défaut du titre */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
 }
 
 .container_pamp h6{
     position: absolute;
-    max-width: 95%; /* Limite la largeur du texte pour s'adapter au conteneur */
-    top: 50%; /* Positionne le titre verticalement au centre */
-    left: 50%; /* Positionne le titre horizontalement au centre */
-    transform: translate(-50%, -50%); /* Centre parfaitement le titre */
-    margin: 0; /* Supprime les marges par défaut du titre */
-    overflow: hidden; /* Évite les débordements */
+    max-width: 95%; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+    overflow: hidden; 
 }
 
 .container_framboise h6{
     position: absolute;
-    max-width: 75%; /* Limite la largeur du texte pour s'adapter au conteneur */
-    top: 50%; /* Positionne le titre verticalement au centre */
-    left: 50%; /* Positionne le titre horizontalement au centre */
-    transform: translate(-50%, -50%); /* Centre parfaitement le titre */
-    margin: 0; /* Supprime les marges par défaut du titre */
-    overflow: hidden; /* Évite les débordements */
-}
-
-.menu-item{
-    padding: 0%;
-    margin: 0%;
-    
+    max-width: 75%; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+    overflow: hidden; 
 }
 
 
+.ct-button {
+    width: 236px;
+    height: 80px;
+}                   
 
+/* Page Nous Rencontrer */
 
 /* input email */
 
@@ -165,30 +117,29 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     border-radius: 5px;
 }
 
-/* bouton "envoyer du formulaire */
+/* bouton "envoyer" du formulaire */
 
 #wpforms-submit-206{
     width: 198px;
     height: 55px;
     background-color: #E0B9B4;
-    margin: 0 auto;
-    display: block;
+    margin: 0px 135px;
+}
+
+
+/* Footer */
+
+.ct-footer{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 60px; 
     
 }
-/* image sous le formulaire */
 
-.img_nouscontacter{
-    position: absolute;
-    top: 450px;
-    left: -615px;
- 
-}
 
-.ct-container-full{
-    padding: 0;
-    margin: 0;
-}
 /*  Page commander */
+
 .container_produit{
     width: 192px;
     height: 128px;
@@ -196,12 +147,12 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 .container_produit h5{
     position: absolute;
-    max-width: 75%; /* Limite la largeur du texte pour s'adapter au conteneur */
-    top: 50%; /* Positionne le titre verticalement au centre */
-    left: 50%; /* Positionne le titre horizontalement au centre */
-    transform: translate(-50%, -50%); /* Centre parfaitement le titre */
-    margin: 0; /* Supprime les marges par défaut du titre */
-    overflow: hidden; /* Évite les débordements */
+    max-width: 75%;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+    overflow: hidden; 
 }
 
 #input{
@@ -209,6 +160,10 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     height: 56px;
 }
 
+.input_commande{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 #wpforms-484-field_1{
     width: 383px;
@@ -216,12 +171,10 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     min-width: 400px
 }
 
-
 #wpforms-484-field_2{
     width: 383px;
     height: 71px;
     min-width: 400px;
-
 }
 
 #wpforms-484-field_3{
@@ -252,10 +205,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
   display: none;
 }
 
-
 #wpforms-submit-484{
     display: none;
-  }
+}
 
 #button_commander{
     width: 198px;
@@ -263,24 +215,54 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     text-align: center;
 }
 
-
 #wpforms-submit-568{
     display: none;
-    
-  }
+ }
 
 #wpforms-568-field_3{
     width: 39px;
     height: 56px;  
     min-width: 39px; 
 }
+.ct-container-full{
+    padding: 0px !important;
+}
+.elementor-add-new-section{
+    display: none;
+}
+.elementor-element-6592195{
+    display: none;
+}
 
+.elementor-element-2324e58{
+    display: none;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+    /* Styles pour les appareils mobiles */
+    
+    .ct-button{
+        width: 85px;
+        height: 40px ;
+    }
+    
+
+    .fleur_nouscontacter{
+        display: none;
+    }
+
+}
+
+/* Tablette */
+
+@media only screen and  (max-width: 1024px) {
+    /* Styles pour les tablettes */
+   
 
 
 
   
-/*Media query pour les tablettes */
 
-@media screen and (max-width: 768px) {
-    
-}
+

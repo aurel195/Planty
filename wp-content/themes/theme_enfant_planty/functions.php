@@ -9,7 +9,7 @@ function theme_enqueue_styles()
 
 add_filter( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
 function add_extra_item_to_nav_menu( $items, $args ) {
-    if (is_user_logged_in() && $args->menu == 3) {
+    if (is_user_logged_in() && $args->menu == 3){
         $items .= '<li class="menu-item"><a href="'.get_admin_url().'">Admin</a></li>';
         }
         return $items;
