@@ -14,7 +14,26 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 /* import de la font Syne depuis Google Fonts */
 
-.ct-container-full{}
+
+/* Général */
+
+.ct-container-full{
+    padding: 0px !important;
+}
+
+.elementor-add-new-section{
+    display: none;
+}
+
+.elementor-element-6592195{
+    display: none;
+}
+
+.elementor-element-2324e58{
+    display: none;
+}
+
+
 /* Header */
 
 .menu-item a:hover {
@@ -26,6 +45,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     font-size: 16px;
     font-weight: 400;
 }
+
 
 /* Page Home */
 
@@ -85,16 +105,15 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     overflow: hidden; 
 }
 
-
 .ct-button {
     width: 236px;
     height: 80px;
 }                   
 
+
 /* Page Nous Rencontrer */
 
 /* input email */
-
 #wpforms-206-field_1{
     width: 500px;
     height: 71px;
@@ -102,15 +121,13 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 }
 
 /* input nom */
-
-#wpforms-206-field_4{
+#wpforms-206-field_5{
     width: 500px;
     height: 71px;
     border-radius: 5px;
 }
 
 /* input message */
-
 #wpforms-206-field_2{
     width: 500px;
     height: 237px;
@@ -118,7 +135,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 }
 
 /* bouton "envoyer" du formulaire */
-
 #wpforms-submit-206{
     width: 198px;
     height: 55px;
@@ -155,66 +171,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     overflow: hidden; 
 }
 
-#input{
-    width: 39px;
-    height: 56px;
-}
-
-.input_commande{
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#wpforms-484-field_1{
-    width: 383px;
-    height: 71px;
-    min-width: 400px
-}
-
-#wpforms-484-field_2{
-    width: 383px;
-    height: 71px;
-    min-width: 400px;
-}
-
-#wpforms-484-field_3{
-    width: 383px;
-    height: 71px;
-    min-width: 400px
-}
-
-#wpforms-487-field_1{
-    width: 383px;
-    height: 71px;
-    min-width: 400px
-}
-
-#wpforms-487-field_2{
-    width: 383px;
-    height: 71px;
-    min-width: 400px
-}
-
-#wpforms-487-field_3{
-    width: 383px;
-    height: 71px;
-    min-width: 400px
-}
-
-#wpforms-submit-487{
-  display: none;
-}
-
-#wpforms-submit-484{
-    display: none;
-}
-
-#button_commander{
-    width: 198px;
-    height: 55px;
-    text-align: center;
-}
-
 #wpforms-submit-568{
     display: none;
  }
@@ -224,45 +180,174 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     height: 56px;  
     min-width: 39px; 
 }
-.ct-container-full{
-    padding: 0px !important;
-}
-.elementor-add-new-section{
-    display: none;
-}
-.elementor-element-6592195{
-    display: none;
+
+.conteneur-formulaire {
+    display: flex;
+    justify-content: center;
 }
 
-.elementor-element-2324e58{
-    display: none;
+.formulaire-colonne-gauche, .formulaire-colonne-droite {
+    padding: 40px;
+    width: 50%;
 }
+
+.ligne-formulaire {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Espace entre les labels */
+    color: white;
+}
+
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{
+    background-color: #fff; 
+    width: 383px; 
+    height: 71px; 
+    border-radius: 5px;
+    color: black;
+}
+
+input[type="submit"] {
+    background-color: #E0B9B4;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Syne';
+    font-weight: 400;
+    width: 198px;
+    height:55px;
+    border-radius: 5px;
+    display: block; 
+    margin: 0 auto;
+}
+
+.ligne-formulaire {
+    display: flex;
+    justify-content: center;
+}
+
+    
+ 
+
+.wpcf7-form-control.wpcf7-text.nombre_commande{
+    width: 39px;
+    height: 56px ;
+    background-color: #fff;
+    color: #000;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-size: 16px;
+    border-radius: 0%;
+}
+
+
+/* Tablette */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  
+    .conteneur-formulaire {
+        flex-direction: column;
+    }
+    
+    .formulaire-colonne-gauche, .formulaire-colonne-droite {
+        width: 100%;
+    }
+}
+    
+
 
 /* Mobile */
 
-@media only screen and (max-width: 767px) {
-    /* Styles pour les appareils mobiles */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
     
+    .les_gouts{
+        display: flex;
+        flex-direction: column;
+    }
     .ct-button{
         width: 85px;
         height: 40px ;
     }
-    
 
-    .fleur_nouscontacter{
-        display: none;
+
+    #wpforms-206-field_1{
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    
+    #wpforms-206-field_5{
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    
+    #wpforms-206-field_2{
+        width: 300px;
+        height: 100px;
+        border-radius: 5px;
     }
 
-}
+    .wpforms-206-field{
+        width: 300px;
+        height: 100px;
+        border-radius: 5px;
+    }
 
-/* Tablette */
+    #wpforms-submit-206{
+        width: 100px;
+        height: 40px;
+        background-color: #E0B9B4;
+        margin: 0px 115px;
+    }
 
-@media only screen and  (max-width: 1024px) {
-    /* Styles pour les tablettes */
-   
+    #wpforms-487-field_1{
+        width: 300px;
+        height: 40px;
+        max-width: 300px !important;  
+    }
+    
+    #wpforms-487-field_2{
+        width: 300px;
+        height: 40px;
+    }
+    
+    #wpforms-487-field_3{
+        width: 300px;
+        height: 40px;
+    }
 
 
 
-  
+    .container_framboise h6{
+        position: absolute;
+        max-width: 75%; 
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        margin: 0; 
+        overflow: hidden; 
+    }
+
+    .container_framboise{
+        max-width: 50%;
+    }
+    .conteneur-formulaire {
+        flex-direction: column;
+    }
+    
+    .formulaire-colonne-gauche, .formulaire-colonne-droite {
+        width: 100%;
+    }
+
+    .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{
+         width: 280px;
+        height: 40px; 
+    }
+
+    }
 
 

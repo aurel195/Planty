@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Blocksy package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-23 18:12:35+0000\n"
+"PO-Revision-Date: 2024-05-28 17:36:34+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,6 +16,21 @@ msgstr ""
 #, gp-priority: high
 msgid "Blocksy is a blazing fast and lightweight WordPress theme built with the latest web technologies. It was built with the Gutenberg editor in mind and has a lot of options that makes it extendable and customizable. You can easily create any type of website, such as business agency, shop, corporate, education, restaurant, blog, portfolio, landing page and so on. It works like a charm with popular WordPress page builders, including Elementor, Beaver Builder, Visual Composer and Brizy. Since it is responsive and adaptive, translation ready, SEO optimized and has WooCommerce built-in, you will experience an easy build and even an increase in conversions. Note: Blocksy is built with the latest web technologies in order to bring you the smoothest experience, that told, old browsers like IE 11 and below may not work as expected. We strongly recommend you to update/switch to a modern browser."
 msgstr "Blocksy est un thème WordPress ultra-rapide et léger construit avec les dernières technologies web. Il a été construit avec l’éditeur Gutenberg à l’esprit et dispose de nombreuses options qui le rendent extensible et personnalisable. Vous pouvez facilement créer tout type de site web, tel qu’une agence commerciale, une boutique, une entreprise, une éducation, un restaurant, un blog, un portefeuille, une page de destination, etc. Cela fonctionne à merveille avec les constructeurs de pages WordPress populaires, notamment Elementor, Beaver Builder, Visual Composer et Brizy. Comme il est responsive et adaptatif, prêt pour la traduction, optimisé pour le référencement et intègre WooCommerce, vous ferez l’expérience d’une construction facile et même d’une augmentation des conversions. Remarque : Blocksy est construit avec les dernières technologies web afin de vous offrir l’expérience la plus fluide, cela dit, les anciens navigateurs comme IE 11 et les versions antérieures peuvent ne pas fonctionner comme prévu. Nous vous recommandons fortement de mettre à jour/passer à un navigateur moderne."
+
+#: admin/notices/templates.php:49 static/bundle/719.e25f7aadbda9f219f84d.js:1
+#: static/js/notification/NotificationBlocksDrop.js:85
+msgid "No need to worry, as if you were using any of our theme (Gutenberg) blocks you just need to activate the Blocksy Companion plugin to restore them."
+msgstr "Pas d’inquiétude à avoir, car si vous utilisiez l’un des blocs de notre thème (Gutenberg), il vous suffit d’activer l’extension Blocksy Companion pour les restaurer."
+
+#: admin/notices/templates.php:47 static/bundle/719.e25f7aadbda9f219f84d.js:1
+#: static/js/notification/NotificationBlocksDrop.js:80
+msgid "Due to developer guidelines, all blocks are required to be moved to the Blocksy Companion plugin."
+msgstr "En raison des directives du développeur, tous les blocs doivent être déplacés vers l’extension Blocksy Companion."
+
+#: admin/notices/templates.php:45 static/bundle/719.e25f7aadbda9f219f84d.js:1
+#: static/js/notification/NotificationBlocksDrop.js:71
+msgid "Heads up - theme blocks are going to be moved into the Blocksy Companion plugin soon"
+msgstr "Attention - Les blocs du thème seront bientôt déplacés dans l’extension Blocksy Companion."
 
 #: inc/options/woocommerce/single-product-elements.php:87
 msgid "Right Column"
