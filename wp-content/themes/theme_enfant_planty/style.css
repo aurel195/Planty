@@ -49,27 +49,14 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 /* Page Home */
 
-.container_pamp{
+
+.container_pamp,.container_citron,.container_framboise,.container_fraise{
     width: 394px;
     height: 262px;
 }                                                                
 
-.container_citron{
-    width: 393px;
-    height: 262px;
-}
 
-.container_framboise{
-    width: 393px;
-    height: 262px;
-}
-
-.container_fraise{
-    width: 393px;
-    height: 262px;
-}
-
-.container_citron h6{
+.container_citron h6,.container_fraise h6{
     position: absolute;
     top: 50%; 
     left: 50%; 
@@ -77,13 +64,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     margin: 0; 
 }
 
-.container_fraise h6{
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    margin: 0; 
-}
 
 .container_pamp h6{
     position: absolute;
@@ -108,26 +88,25 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 .ct-button {
     width: 236px;
     height: 80px;
-}                   
+}        
+
+.p_fatiha,.p_vero,.p_marc{
+    color: #000;
+}
+
+
+
+
 
 
 /* Page Nous Rencontrer */
 
-/* input email */
-#wpforms-206-field_1{
+#wpforms-206-field_1,#wpforms-206-field_5{
     width: 500px;
     height: 71px;
     border-radius: 5px;
 }
 
-/* input nom */
-#wpforms-206-field_5{
-    width: 500px;
-    height: 71px;
-    border-radius: 5px;
-}
-
-/* input message */
 #wpforms-206-field_2{
     width: 500px;
     height: 237px;
@@ -150,7 +129,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     justify-content: center; 
     align-items: center; 
     height: 60px; 
-    
 }
 
 
@@ -171,16 +149,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     overflow: hidden; 
 }
 
-#wpforms-submit-568{
-    display: none;
- }
-
-#wpforms-568-field_3{
-    width: 39px;
-    height: 56px;  
-    min-width: 39px; 
-}
-
 .conteneur-formulaire {
     display: flex;
     justify-content: center;
@@ -191,13 +159,29 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     width: 50%;
 }
 
+.formulaire-colonne-droite h2,.formulaire-colonne-gauche h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.formulaire-colonne-gauche{
+    border-right: solid 1px;
+    color: #fff;
+}
+
 .ligne-formulaire {
     margin-bottom: 10px;
 }
 
+.wpcf7-form-control.wpcf7-submit.has-spinner{
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
 label {
     display: block;
-    margin-bottom: 5px; /* Espace entre les labels */
+    margin-bottom: 5px; 
     color: white;
 }
 
@@ -229,9 +213,6 @@ input[type="submit"] {
     justify-content: center;
 }
 
-    
- 
-
 .wpcf7-form-control.wpcf7-text.nombre_commande{
     width: 39px;
     height: 56px ;
@@ -241,6 +222,10 @@ input[type="submit"] {
     font-family: 'Inter';
     font-size: 16px;
     border-radius: 0%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
 }
 
 
@@ -248,106 +233,87 @@ input[type="submit"] {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   
-    .conteneur-formulaire {
-        flex-direction: column;
+.conteneur-formulaire {
+    flex-direction: column;
     }
     
-    .formulaire-colonne-gauche, .formulaire-colonne-droite {
-        width: 100%;
+.formulaire-colonne-gauche, .formulaire-colonne-droite {
+    width: 100%;
     }
 }
-    
+ .container_avis{
+    display: flex;
+    flex-direction: column;
+ }
 
 
 /* Mobile */
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     
-    .les_gouts{
-        display: flex;
-        flex-direction: column;
-    }
-    .ct-button{
-        width: 85px;
-        height: 40px ;
+.les_gouts{
+    display: flex;
+    flex-direction: column;
     }
 
+.ct-button{
+    width: 85px;
+    height: 40px ;
+    }
 
-    #wpforms-206-field_1{
-        width: 300px;
-        height: 40px;
-        border-radius: 5px;
+#wpforms-206-field_1{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
     }
     
-    #wpforms-206-field_5{
-        width: 300px;
-        height: 40px;
-        border-radius: 5px;
+#wpforms-206-field_5{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
     }
     
-    #wpforms-206-field_2{
-        width: 300px;
-        height: 100px;
-        border-radius: 5px;
+#wpforms-206-field_2{
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
     }
 
-    .wpforms-206-field{
-        width: 300px;
-        height: 100px;
-        border-radius: 5px;
+.wpforms-206-field{
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
     }
 
-    #wpforms-submit-206{
-        width: 100px;
-        height: 40px;
-        background-color: #E0B9B4;
-        margin: 0px 115px;
+#wpforms-submit-206{
+    width: 100px;
+    height: 40px;
+    background-color: #E0B9B4;
+    margin: 0px 115px;
     }
 
-    #wpforms-487-field_1{
-        width: 300px;
-        height: 40px;
-        max-width: 300px !important;  
+.conteneur-formulaire {
+    flex-direction: column;
     }
     
-    #wpforms-487-field_2{
-        width: 300px;
-        height: 40px;
+.formulaire-colonne-gauche, .formulaire-colonne-droite {
+    width: 100%;
+    }
+
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{
+    width: 280px;
+    height: 40px; 
+    }
+
+.container_avis{
+    display: flex;
+    flex-direction: column;
+    }
+
+.container_titre_p{
+    margin-left: 30px;
     }
     
-    #wpforms-487-field_3{
-        width: 300px;
-        height: 40px;
-    }
-
-
-
-    .container_framboise h6{
-        position: absolute;
-        max-width: 75%; 
-        top: 50%; 
-        left: 50%;
-        transform: translate(-50%, -50%); 
-        margin: 0; 
-        overflow: hidden; 
-    }
-
-    .container_framboise{
-        max-width: 50%;
-    }
-    .conteneur-formulaire {
-        flex-direction: column;
-    }
     
-    .formulaire-colonne-gauche, .formulaire-colonne-droite {
-        width: 100%;
-    }
 
-    .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{
-         width: 280px;
-        height: 40px; 
-    }
-
-    }
-
-
+}

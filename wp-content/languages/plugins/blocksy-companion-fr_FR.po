@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Blocksy Companion - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-22 14:05:19+0000\n"
+"PO-Revision-Date: 2024-05-29 14:54:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,16 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Blocksy Companion - Stable (latest release)\n"
+
+#: static/js/editor/blocks/post-template/block.json
+msgctxt "block description"
+msgid "Contains the block elements used to render a post, like the title, date, featured image, content or excerpt, and more."
+msgstr "Contient les blocs utilisés pour afficher une publication, tels que le titre, la date, l’image mise en avant, le contenu ou l’extrait, et plus encore."
+
+#: static/js/editor/blocks/post-template/block.json
+msgctxt "block title"
+msgid "Post Template"
+msgstr "Modèle de publication"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:127
 #: framework/extensions/newsletter-subscribe/customizer.php:94
@@ -100,7 +110,7 @@ msgstr "Liens d’affiliation produit"
 msgid "Categorise products by brands and show their logo in archive or single page so users could discover more about their makers."
 msgstr "Catégoriser les produits par marque et afficher leur logo dans les archives ou sur une page unique afin que les utilisateurs/utilisatrices puissent en savoir plus sur les fabricants."
 
-#: framework/features/conditions/rules/woo.php:37
+#: framework/features/conditions/rules/woo.php:42
 #: framework/helpers/exts.php:234
 msgid "Product Brands"
 msgstr "Marques de produits"
@@ -237,7 +247,9 @@ msgstr "Filtre des publications"
 msgid "Integrates custom fields solutions in the meta layers of a post and presents additional information."
 msgstr "Intègre les solutions de champs personnalisés dans les calques de métadonnées d’une publication et présente des informations supplémentaires."
 
-#: framework/helpers/exts.php:97
+#: framework/helpers/exts.php:97 static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/dynamic-data/index.js:16
+#: static/js/editor/blocks/dynamic-data/index.js:84
 msgid "Dynamic Data"
 msgstr "Données dynamiques"
 
@@ -336,10 +348,16 @@ msgid "Border Radius"
 msgstr "Rayon de la bordure"
 
 #: framework/features/header/items/account/options.php:1939
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/breadcrumbs/Edit.js:66
+#: static/js/editor/blocks/contact-info/Edit.js:123
 msgid "Link Hover"
 msgstr "Survol de lien"
 
 #: framework/features/header/items/account/options.php:1933
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/breadcrumbs/Edit.js:60
+#: static/js/editor/blocks/contact-info/Edit.js:114
 msgid "Link Initial"
 msgstr "Lien initial"
 
@@ -381,25 +399,25 @@ msgid "Content Block"
 msgstr "Bloc de contenu"
 
 #: framework/features/header/items/account/options.php:235
-#: framework/features/header/items/account/views/login.php:640
+#: framework/features/header/items/account/views/login.php:646
 msgid "bbPress Dashboard"
 msgstr "Tableau de bord bbPress"
 
 #: framework/features/header/items/account/options.php:215
 #: framework/features/header/items/account/options.php:219
-#: framework/features/header/items/account/views/login.php:613
+#: framework/features/header/items/account/views/login.php:619
 msgid "Tutor LMS Dashboard"
 msgstr "Tableau de bord LMS Tutor"
 
 #: framework/features/header/items/account/options.php:199
 #: framework/features/header/items/account/options.php:203
-#: framework/features/header/items/account/views/login.php:581
+#: framework/features/header/items/account/views/login.php:587
 msgid "Dokan Shop"
 msgstr "Dokan Shop"
 
 #: framework/features/header/items/account/options.php:185
 #: framework/features/header/items/account/options.php:189
-#: framework/features/header/items/account/views/login.php:548
+#: framework/features/header/items/account/views/login.php:553
 msgid "Dokan Dashboard"
 msgstr "Tableau de bord Dokan"
 
@@ -431,11 +449,11 @@ msgstr "Avatar de l’utilisateur/utilisatrice"
 msgid "User Info"
 msgstr "Information utilisateur/utilisatrice"
 
-#: framework/features/conditions/rules/woo.php:75
+#: framework/features/conditions/rules/woo.php:80
 msgid "Product with Taxonomy ID"
 msgstr "Produit avec ID de taxonomie"
 
-#: framework/features/conditions/rules/woo.php:70
+#: framework/features/conditions/rules/woo.php:75
 msgid "Product ID"
 msgstr "ID de produit"
 
@@ -499,6 +517,7 @@ msgid "Fields Gap"
 msgstr "Écart entre les champs"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:87
+#: framework/features/blocks/search/options.php:70
 msgid "Input Height"
 msgstr "Hauteur du champ"
 
@@ -516,6 +535,7 @@ msgstr "Style du formulaire"
 msgid "Enter your email address below and subscribe to our newsletter"
 msgstr "Saisissez votre adresse e-mail ci-dessous et abonnez-vous à notre newsletter"
 
+#: framework/features/blocks/share-box/options.php:25
 #: framework/theme-integration.php:221
 msgid "X (Twitter)"
 msgstr "X (Twitter)"
@@ -692,6 +712,21 @@ msgstr "Un lien permettant de définir un nouveau mot de passe sera envoyé à v
 msgid "Author Archives"
 msgstr "Archives d’auteur/autrice"
 
+#: framework/features/blocks/about-me/options.php:195
+#: framework/features/blocks/share-box/options.php:130
+#: framework/features/blocks/socials/options.php:101
+msgid "Official"
+msgstr "Officiel"
+
+#: framework/features/blocks/about-me/options.php:187
+#: framework/features/blocks/share-box/options.php:122
+#: framework/features/blocks/socials/options.php:93
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/about-me/Edit.js:117
+#: static/js/editor/blocks/contact-info/Edit.js:133
+msgid "Icons Color"
+msgstr "Couleur des icônes"
+
 #: framework/extensions/newsletter-subscribe/helpers.php:142
 msgid "First name"
 msgstr "Prénom"
@@ -700,6 +735,13 @@ msgstr "Prénom"
 msgid "Privacy Policy Page"
 msgstr "Page de la politique de confidentialité"
 
+#: framework/features/blocks/contact-info/options.php:83
+#: framework/features/blocks/contact-info/options.php:146
+#: framework/features/blocks/contact-info/options.php:207
+#: framework/features/blocks/contact-info/options.php:268
+#: framework/features/blocks/contact-info/options.php:329
+#: framework/features/blocks/contact-info/options.php:390
+#: framework/features/blocks/contact-info/options.php:451
 #: framework/features/header/items/account/options.php:375
 #: framework/features/header/items/account/options.php:756
 msgid "Icon Source"
@@ -732,10 +774,14 @@ msgid "Cookies Consent"
 msgstr "Consentement aux cookies"
 
 #: framework/extensions/trending/customizer.php:307
+#: framework/features/blocks/about-me/options.php:81
 msgid "Image Size"
 msgstr "Taille de l’image"
 
 #: framework/features/header/header-options.php:84
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/query/edit/PostsInspectorControls.js:46
+#: static/js/editor/blocks/query/edit/PostsInspectorControls.js:73
 msgid "Offset"
 msgstr "Décalage"
 
@@ -762,6 +808,10 @@ msgstr "Bouton accepter"
 
 #: framework/extensions/cookies-consent/customizer.php:147
 #: framework/extensions/newsletter-subscribe/customizer.php:196
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/about-me/Edit.js:89
+#: static/js/editor/blocks/breadcrumbs/Edit.js:43
+#: static/js/editor/blocks/contact-info/Edit.js:96
 msgid "Text Color"
 msgstr "Couleur du texte"
 
@@ -777,6 +827,11 @@ msgstr "Texte du bouton refuser"
 #: framework/extensions/cookies-consent/customizer.php:76
 msgid "Accept Button text"
 msgstr "Texte du bouton accepter"
+
+#. translators: placeholder here means the actual URL.
+#: framework/features/blocks/socials/options.php:24
+msgid "Configure the social links in Customizer ➝ General ➝ %sSocial Network Accounts%s."
+msgstr "Configurer les liens sociaux dans Apparence ➝ Général ➝ %sComptes de réseaux sociaux%s."
 
 #: framework/extensions/product-reviews/metabox.php:60
 msgid "Please note that some of this information (price, sku, brand) won't be displayed on the front-end. It is solely used for Google's Schema.org markup."
@@ -838,7 +893,7 @@ msgstr "<strong>Erreur</strong> : %s"
 msgid "Sponsored Attribute"
 msgstr "Attribut sponsorisé"
 
-#: framework/features/conditions/rules/cpt.php:47
+#: framework/features/conditions/rules/cpt.php:40
 msgid "%s %s Taxonomy"
 msgstr "Taxonomie %s %s "
 
@@ -875,6 +930,7 @@ msgid "Title Color"
 msgstr "Couleur du titre"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:19
+#: framework/features/blocks/about-me/options.php:67
 msgid "You can add here some arbitrary HTML code."
 msgstr "Vous pouvez ajouter ici du code HTML."
 
@@ -938,23 +994,23 @@ msgstr "Livre"
 msgid "Review Entity"
 msgstr "Entité d’avis"
 
-#: framework/extensions/product-reviews/extension.php:479
+#: framework/extensions/product-reviews/extension.php:480
 msgid "Overll Score Background"
 msgstr "Arrière-plan du score global"
 
-#: framework/extensions/product-reviews/extension.php:457
+#: framework/extensions/product-reviews/extension.php:458
 msgid "Overll Score Text"
 msgstr "Texte du score global"
 
 #: framework/extensions/product-reviews/extension.php:280
-#: framework/extensions/product-reviews/extension.php:449
+#: framework/extensions/product-reviews/extension.php:450
 msgid "Inactive"
 msgstr "Inactif"
 
 #: framework/extensions/product-reviews/extension.php:274
-#: framework/extensions/product-reviews/extension.php:443
-#: framework/extensions/product-reviews/extension.php:471
-#: framework/extensions/product-reviews/extension.php:492
+#: framework/extensions/product-reviews/extension.php:444
+#: framework/extensions/product-reviews/extension.php:472
+#: framework/extensions/product-reviews/extension.php:493
 #: framework/features/header/items/account/options.php:1985
 #: static/bundle/dashboard.js:11
 #: static/js/dashboard/screens/Extensions/Sidebar.js:120
@@ -962,23 +1018,30 @@ msgid "Active"
 msgstr "Actif"
 
 #: framework/extensions/product-reviews/extension.php:256
-#: framework/extensions/product-reviews/extension.php:426
+#: framework/extensions/product-reviews/extension.php:427
 msgid "Star Rating Color"
 msgstr "Couleur des étoiles de notation"
 
-#: framework/extensions/product-reviews/extension.php:407
+#: framework/extensions/product-reviews/extension.php:408
 msgid "Buy Now Button"
 msgstr "Bouton « Acheter maintenant »"
 
-#: framework/extensions/product-reviews/extension.php:386
+#: framework/extensions/product-reviews/extension.php:387
 msgid "Scores Box Width"
 msgstr "Largeur de la boîte de scores"
 
-#: framework/extensions/product-reviews/extension.php:375
+#: framework/extensions/product-reviews/extension.php:376
 msgid "Review Summary"
 msgstr "Résumé de l’avis"
 
-#: framework/extensions/product-reviews/extension.php:396
+#: framework/features/blocks/about-me/options.php:163
+#: framework/features/blocks/contact-info/options.php:493
+#: framework/features/blocks/share-box/options.php:98
+#: framework/features/blocks/socials/options.php:69
+msgid "Set links to nofollow"
+msgstr "Définir les liens à nofollow"
+
+#: framework/extensions/product-reviews/extension.php:397
 msgid "Read More Button"
 msgstr "Bouton « Lire la suite »"
 
@@ -1014,6 +1077,7 @@ msgstr "Affichez une boîte d’acceptation des cookies afin de vous conformer a
 #: framework/features/header/items/account/options.php:1631
 #: framework/extensions/newsletter-subscribe/admin-static/bundle/newsletter-block.js:1
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:190
+#: static/bundle/blocks/blocks.js:11 static/js/editor/blocks/search/Edit.js:250
 msgid "Input Background Color"
 msgstr "Couleur d’arrière-plan de l’entrée"
 
@@ -1021,6 +1085,7 @@ msgstr "Couleur d’arrière-plan de l’entrée"
 #: framework/features/header/items/account/options.php:1588
 #: framework/extensions/newsletter-subscribe/admin-static/bundle/newsletter-block.js:1
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:159
+#: static/bundle/blocks/blocks.js:11 static/js/editor/blocks/search/Edit.js:223
 msgid "Input Border Color"
 msgstr "Couleur de la bordure de l’entrée"
 
@@ -1034,6 +1099,9 @@ msgstr "Couleur de la bordure de l’entrée"
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:146
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:177
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:210
+#: static/bundle/blocks/blocks.js:11 static/js/editor/blocks/search/Edit.js:213
+#: static/js/editor/blocks/search/Edit.js:240
+#: static/js/editor/blocks/search/Edit.js:269
 msgid "Focus"
 msgstr "Focus"
 
@@ -1041,6 +1109,7 @@ msgstr "Focus"
 #: framework/features/header/items/account/options.php:1553
 #: framework/extensions/newsletter-subscribe/admin-static/bundle/newsletter-block.js:1
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:128
+#: static/bundle/blocks/blocks.js:11 static/js/editor/blocks/search/Edit.js:196
 msgid "Input Font Color"
 msgstr "Couleur de la police de l’entrée"
 
@@ -1074,6 +1143,11 @@ msgstr "Ombre de la modale"
 #: framework/features/header/items/account/options.php:1514
 msgid "Modal Options"
 msgstr "Option de la modale"
+
+#: framework/features/blocks/about-me/options.php:156
+#: framework/features/blocks/socials/options.php:62
+msgid "Open links in new tab"
+msgstr "Ouvrir les liens dans un nouvel onglet"
 
 #: framework/extensions/trending/customizer.php:386
 msgid "Add one or more conditions to display the trending block."
@@ -1173,6 +1247,9 @@ msgstr "Image du compte"
 #: framework/features/header/items/account/options.php:1409
 #: framework/features/header/items/account/options.php:1450
 #: framework/features/header/items/account/options.php:1738
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/share-box/Edit.js:81
+#: static/js/editor/blocks/socials/Edit.js:81
 msgid "Icon Color"
 msgstr "Couleur de l’icône"
 
@@ -1185,46 +1262,46 @@ msgstr "Texte du libellé"
 msgid "Container Style"
 msgstr "Style de conteneur"
 
-#: framework/extensions/product-reviews/extension.php:553
+#: framework/extensions/product-reviews/extension.php:554
 msgid "Search Product Review"
 msgstr "Rechercher une évaluation du produit"
 
-#: framework/extensions/product-reviews/extension.php:552
+#: framework/extensions/product-reviews/extension.php:553
 msgid "Update Product Review"
 msgstr "Mettre à jour l’évaluation du produit"
 
-#: framework/extensions/product-reviews/extension.php:551
+#: framework/extensions/product-reviews/extension.php:552
 msgid "Edit Product Review"
 msgstr "Modifier l’évaluation du produit"
 
-#: framework/extensions/product-reviews/extension.php:550
+#: framework/extensions/product-reviews/extension.php:551
 msgid "Add New Review"
 msgstr "Ajouter une nouvelle évaluation"
 
-#: framework/extensions/product-reviews/extension.php:549
+#: framework/extensions/product-reviews/extension.php:550
 msgid "Add New Product Review"
 msgstr "Ajouter une nouvelle évaluation du produit"
 
-#: framework/extensions/product-reviews/extension.php:548
+#: framework/extensions/product-reviews/extension.php:549
 msgid "View Product Review"
 msgstr "Voir l’évaluation du produit"
 
-#: framework/extensions/product-reviews/extension.php:547
+#: framework/extensions/product-reviews/extension.php:548
 msgid "All Reviews"
 msgstr "Toutes les évaluations"
 
-#: framework/extensions/product-reviews/extension.php:546
+#: framework/extensions/product-reviews/extension.php:547
 msgid "Parent Product Review"
 msgstr "Évaluation du produit parent"
 
-#: framework/extensions/product-reviews/extension.php:544
+#: framework/extensions/product-reviews/extension.php:545
 msgid "Product Review"
 msgstr "Évaluation du produit"
 
-#: framework/extensions/product-reviews/extension.php:539
 #: framework/extensions/product-reviews/extension.php:540
-#: framework/extensions/product-reviews/extension.php:543
-#: framework/extensions/product-reviews/extension.php:545
+#: framework/extensions/product-reviews/extension.php:541
+#: framework/extensions/product-reviews/extension.php:544
+#: framework/extensions/product-reviews/extension.php:546
 msgid "Product Reviews"
 msgstr "Évaluations de produits"
 
@@ -1330,40 +1407,40 @@ msgstr "Galerie"
 
 #. Translators: %s is the theme name.
 #: framework/dashboard.php:352 framework/dashboard.php:353
-#: framework/extensions/product-reviews/extension.php:618
+#: framework/extensions/product-reviews/extension.php:619
 msgid "Blocksy"
 msgstr "Blocksy"
 
 #. Translators: %s is the theme name.
-#: framework/extensions/product-reviews/extension.php:617
+#: framework/extensions/product-reviews/extension.php:618
 msgid "%s Settings"
 msgstr "Réglages de %s"
 
-#: framework/extensions/product-reviews/extension.php:598
+#: framework/extensions/product-reviews/extension.php:599
 msgid "New Category Name"
 msgstr "Nom de la nouvelle catégorie"
 
-#: framework/extensions/product-reviews/extension.php:597
+#: framework/extensions/product-reviews/extension.php:598
 msgid "Add New Category"
 msgstr "Ajouter une nouvelle catégorie"
 
-#: framework/extensions/product-reviews/extension.php:596
+#: framework/extensions/product-reviews/extension.php:597
 msgid "Update Category"
 msgstr "Mettre à jour la catégorie"
 
-#: framework/extensions/product-reviews/extension.php:595
+#: framework/extensions/product-reviews/extension.php:596
 msgid "Edit Category"
 msgstr "Modifier la catégorie"
 
-#: framework/extensions/product-reviews/extension.php:594
+#: framework/extensions/product-reviews/extension.php:595
 msgid "Parent Category:"
 msgstr "Catégorie parente :"
 
-#: framework/extensions/product-reviews/extension.php:593
+#: framework/extensions/product-reviews/extension.php:594
 msgid "Parent Category"
 msgstr "Catégorie parente"
 
-#: framework/extensions/product-reviews/extension.php:592
+#: framework/extensions/product-reviews/extension.php:593
 #: static/bundle/dashboard.js:11
 #: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:60
 #: static/js/dashboard/screens/DemoInstall/filters/DemoListFilters.js:65
@@ -1371,20 +1448,20 @@ msgstr "Catégorie parente"
 msgid "All Categories"
 msgstr "Toutes les catégories"
 
-#: framework/extensions/product-reviews/extension.php:591
+#: framework/extensions/product-reviews/extension.php:592
 msgid "Search Category"
 msgstr "Rechercher une catégorie"
 
-#: framework/extensions/product-reviews/extension.php:589
-#: framework/extensions/product-reviews/extension.php:599
+#: framework/extensions/product-reviews/extension.php:590
+#: framework/extensions/product-reviews/extension.php:600
 msgid "Categories"
 msgstr "Catégories"
 
-#: framework/extensions/product-reviews/extension.php:555
+#: framework/extensions/product-reviews/extension.php:556
 msgid "Not found in Trash"
 msgstr "Non trouvé dans la corbeille"
 
-#: framework/extensions/product-reviews/extension.php:554
+#: framework/extensions/product-reviews/extension.php:555
 msgid "Not Found"
 msgstr "Non trouvé"
 
@@ -1419,6 +1496,8 @@ msgstr "Note globale"
 
 #: framework/extensions/product-reviews/helpers.php:30
 #: framework/extensions/product-reviews/metabox.php:179
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:101
 msgid "Rating"
 msgstr "Note"
 
@@ -1426,10 +1505,12 @@ msgstr "Note"
 msgid "TikTok"
 msgstr "TikTok"
 
+#: framework/features/blocks/share-box/options.php:61
 #: framework/theme-integration.php:232
 msgid "Odnoklassniki"
 msgstr "Odnoklassniki"
 
+#: framework/features/blocks/share-box/options.php:55
 #: framework/theme-integration.php:231
 msgid "VKontakte"
 msgstr "VKontakte"
@@ -1450,6 +1531,7 @@ msgstr "GitHub"
 msgid "WordPress"
 msgstr "WordPress"
 
+#: framework/features/blocks/share-box/options.php:31
 #: framework/theme-integration.php:225
 msgid "Pinterest"
 msgstr "Pinterest"
@@ -1467,12 +1549,16 @@ msgstr "Visibilité du libellé"
 msgid "Post with Taxonomy ID"
 msgstr "Publication avec ID de taxonomie"
 
-#: framework/features/conditions-manager.php:234 static/bundle/options.js:14
+#: framework/features/conditions-manager.php:234
+#: static/bundle/blocks/blocks.js:11 static/bundle/options.js:14
+#: static/js/editor/blocks/query/edit/PostsInspectorControls.js:291
 #: static/js/options/ConditionsManager/SingleCondition.js:92
 msgid "Exclude"
 msgstr "Exclure"
 
-#: framework/features/conditions-manager.php:234 static/bundle/options.js:14
+#: framework/features/conditions-manager.php:234
+#: static/bundle/blocks/blocks.js:11 static/bundle/options.js:14
+#: static/js/editor/blocks/query/edit/PostsInspectorControls.js:283
 #: static/js/options/ConditionsManager/SingleCondition.js:91
 msgid "Include"
 msgstr "Inclure"
@@ -1487,10 +1573,85 @@ msgstr "Blocksy nécessite WordPress version %s+. Comme vous utilisez une versio
 msgid "Blocksy requires PHP version %s+, plugin is currently NOT RUNNING."
 msgstr "Blocksy nécessite PHP version %s+, l’extension ne fonctionne pas actuellement."
 
+#: framework/features/blocks/contact-info/options.php:429
+msgid "Website:"
+msgstr "Site :"
+
+#: framework/features/blocks/contact-info/options.php:422
+msgid "Website"
+msgstr "Site"
+
+#: framework/features/blocks/contact-info/options.php:368
+msgid "Email:"
+msgstr "E-mail :"
+
+#: framework/features/blocks/contact-info/options.php:307
+msgid "Fax:"
+msgstr "Fax :"
+
+#: framework/features/blocks/contact-info/options.php:300
+msgid "Fax"
+msgstr "Fax"
+
+#: framework/features/blocks/contact-info/options.php:246
+msgid "Opening hours"
+msgstr "Horaires d’ouverture"
+
+#: framework/features/blocks/contact-info/options.php:239
+msgid "Work Hours"
+msgstr "Heures de travail"
+
+#: framework/features/blocks/contact-info/options.php:117
+msgid "Phone"
+msgstr "Téléphone"
+
+#: framework/features/blocks/contact-info/options.php:74
+#: framework/features/blocks/contact-info/options.php:137
+#: framework/features/blocks/contact-info/options.php:198
+#: framework/features/blocks/contact-info/options.php:259
+#: framework/features/blocks/contact-info/options.php:320
+#: framework/features/blocks/contact-info/options.php:381
+#: framework/features/blocks/contact-info/options.php:442
+msgid "Link (optional)"
+msgstr "Lien (facultatif)"
+
+#: framework/features/blocks/contact-info/options.php:55
+msgid "Address"
+msgstr "Adresse"
+
+#: framework/features/blocks/contact-info/options.php:47
+#: framework/features/blocks/contact-info/options.php:185
+#: framework/features/blocks/contact-info/view.php:31
+msgid "Mobile:"
+msgstr "Mobile :"
+
+#: framework/features/blocks/contact-info/options.php:39
+#: framework/features/blocks/contact-info/options.php:124
+#: framework/features/blocks/contact-info/view.php:23
+msgid "Phone:"
+msgstr "Téléphone :"
+
+#: framework/features/blocks/contact-info/options.php:31
+#: framework/features/blocks/contact-info/options.php:61
+#: framework/features/blocks/contact-info/view.php:15
+msgid "Address:"
+msgstr "Adresse :"
+
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:13
+#: framework/features/blocks/contact-info/options.php:19
 #: framework/features/header/items/account/options.php:577
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/breadcrumbs/Edit.js:54
+#: static/js/editor/blocks/contact-info/Edit.js:107
 msgid "Text"
 msgstr "Texte"
+
+#: framework/features/blocks/contact-info/options.php:15
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/contact-info/index.js:51
+#: static/js/editor/blocks/contact-info/index.js:53
+msgid "Contact Info"
+msgstr "Informations de contact"
 
 #: framework/extensions/trending/customizer.php:266
 msgid "Separate posts ID by comma. How to find the %spost ID%s."
@@ -1505,6 +1666,8 @@ msgid "Custom Query"
 msgstr "Requête personnalisée"
 
 #: framework/extensions/trending/customizer.php:238
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/query/edit/layers/useTaxonomiesLayers.js:186
 msgid "Taxonomies"
 msgstr "Taxonomies"
 
@@ -1513,6 +1676,8 @@ msgid "All taxonomies"
 msgstr "Toutes les taxonomies"
 
 #: framework/extensions/trending/customizer.php:41
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:63
 msgid "Taxonomy"
 msgstr "Taxonomie"
 
@@ -1520,14 +1685,33 @@ msgstr "Taxonomie"
 msgid "All categories"
 msgstr "Toutes les catégories"
 
-#: framework/extensions/product-reviews/extension.php:590
+#: framework/extensions/product-reviews/extension.php:591
 #: framework/extensions/trending/customizer.php:35
 msgid "Category"
 msgstr "Catégorie"
 
+#: framework/features/blocks/about-me/view.php:197
+msgid "View Profile"
+msgstr "Voir le profil"
+
+#: framework/features/blocks/about-me/options.php:119
+#: framework/features/blocks/socials/options.php:19
+msgid "Social Channels"
+msgstr "Canaux sociaux"
+
+#: framework/features/blocks/about-me/options.php:104
+msgid "Alignment"
+msgstr "Alignement"
+
 #: framework/extensions/newsletter-subscribe/customizer.php:26
+#: framework/features/blocks/about-me/options.php:64
+#: framework/features/blocks/dynamic-data/options.php:143
 msgid "Description"
 msgstr "Description"
+
+#: framework/features/blocks/about-me/options.php:37
+msgid "User"
+msgstr "Utilisateur/utilisatrice"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:82
 msgid "Boxed"
@@ -1538,20 +1722,116 @@ msgstr "Encadré"
 msgid "Simple"
 msgstr "Simple"
 
+#: framework/features/blocks/about-me/options.php:16
+msgid "About me"
+msgstr "À propos de moi"
+
+#: framework/features/blocks/about-me/options.php:219
+#: framework/features/blocks/contact-info/options.php:547
+#: framework/features/blocks/share-box/options.php:158
+#: framework/features/blocks/socials/options.php:129
+msgid "Outline"
+msgstr "Contour"
+
+#: framework/features/blocks/about-me/options.php:220
+#: framework/features/blocks/contact-info/options.php:548
+#: framework/features/blocks/share-box/options.php:159
+#: framework/features/blocks/socials/options.php:130
+msgid "Solid"
+msgstr "Plein"
+
+#: framework/features/blocks/about-me/options.php:215
+#: framework/features/blocks/contact-info/options.php:541
+#: framework/features/blocks/share-box/options.php:152
+#: framework/features/blocks/socials/options.php:123
+msgid "Shape Fill Type"
+msgstr "Type de remplissage de la forme"
+
+#: framework/features/blocks/about-me/options.php:98
+#: framework/features/blocks/about-me/options.php:206
+#: framework/features/blocks/contact-info/options.php:532
+#: framework/features/blocks/share-box/options.php:143
+#: framework/features/blocks/socials/options.php:114
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/dynamic-data/components/Dimensions.js:84
+msgid "Square"
+msgstr "Carré"
+
+#: framework/features/blocks/about-me/options.php:97
+#: framework/features/blocks/about-me/options.php:205
+#: framework/features/blocks/contact-info/options.php:531
+#: framework/features/blocks/share-box/options.php:142
+#: framework/features/blocks/socials/options.php:113
+msgid "Rounded"
+msgstr "Arrondi"
+
+#: framework/features/blocks/about-me/options.php:204
+#: framework/features/blocks/contact-info/options.php:530
+#: framework/features/blocks/share-box/options.php:141
+#: framework/features/blocks/socials/options.php:112
 #: framework/features/header/items/account/options.php:22
 #: framework/features/header/items/account/options.php:268
 #: framework/features/header/items/account/options.php:348
 #: framework/features/header/items/account/options.php:746
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/dynamic-data/components/InspectorControls.js:126
 msgid "None"
 msgstr "Aucun"
 
+#: framework/features/blocks/about-me/options.php:200
+#: framework/features/blocks/contact-info/options.php:523
+#: framework/features/blocks/share-box/options.php:135
+#: framework/features/blocks/socials/options.php:106
+msgid "Icons Shape Type"
+msgstr "Type de forme des icônes"
+
+#: framework/features/blocks/about-me/options.php:87
+msgid "Large"
+msgstr "Grande"
+
+#: framework/features/blocks/about-me/options.php:86
 #: framework/theme-integration.php:228
 msgid "Medium"
 msgstr "Moyenne"
 
+#: framework/features/blocks/about-me/options.php:85
+msgid "Small"
+msgstr "Petite"
+
+#: framework/features/blocks/about-me/options.php:168
+#: framework/features/blocks/contact-info/options.php:504
+#: framework/features/blocks/share-box/options.php:103
+#: framework/features/blocks/socials/options.php:74
+msgid "Icons Size"
+msgstr "Taille des icônes"
+
+#: framework/features/blocks/about-me/options.php:124
+msgid "You can configure social URLs in %s."
+msgstr "Vous pouvez configurer des URL sociales dans  %s."
+
+#: framework/features/blocks/socials/options.php:15
+msgid "Social Icons"
+msgstr "Icônes sociales"
+
+#: framework/features/blocks/contact-info/options.php:486
+msgid "Open link in new tab"
+msgstr "Ouvrir le lien dans un nouvel onglet"
+
+#: framework/features/blocks/about-me/options.php:49
+msgid "Image"
+msgstr "Image"
+
 #: framework/extensions/trending/customizer.php:233
 msgid "Source"
 msgstr "Source"
+
+#: framework/features/blocks/about-me/options.php:54
+msgid "Change Image"
+msgstr "Modifier l’image"
+
+#: framework/features/blocks/about-me/options.php:53
+msgid "Select Image"
+msgstr "Sélectionner une image"
 
 #: framework/helpers/exts.php:186
 msgid "Floating Cart"
@@ -1560,6 +1840,10 @@ msgstr "Panier flottant"
 #: framework/helpers/exts.php:194
 msgid "Quick View"
 msgstr "Vue rapide"
+
+#: framework/features/blocks/about-me/options.php:128
+msgid "Customizer"
+msgstr "Outil de personnalisation"
 
 #: framework/extensions/cookies-consent/customizer.php:123
 msgid "This text will appear under each comment form and subscribe form."
@@ -1588,6 +1872,13 @@ msgid "We use cookies to ensure that we give you the best experience on our webs
 msgstr "Nous utilisons des cookies pour nous assurer que nous vous offrons la meilleure expérience possible sur notre site."
 
 #: framework/extensions/cookies-consent/customizer.php:62
+#: framework/features/blocks/contact-info/options.php:67
+#: framework/features/blocks/contact-info/options.php:130
+#: framework/features/blocks/contact-info/options.php:191
+#: framework/features/blocks/contact-info/options.php:252
+#: framework/features/blocks/contact-info/options.php:313
+#: framework/features/blocks/contact-info/options.php:374
+#: framework/features/blocks/contact-info/options.php:435
 msgid "Content"
 msgstr "Contenu"
 
@@ -1668,6 +1959,7 @@ msgid "Subscribe Form"
 msgstr "Formulaire d’inscription"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:253
+#: framework/features/blocks/about-me/options.php:58
 #: framework/features/header/items/account/options.php:578
 msgid "Name"
 msgstr "Nom"
@@ -1727,9 +2019,23 @@ msgstr "ID de la liste"
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:41
 #: framework/extensions/newsletter-subscribe/customizer.php:49
 #: framework/extensions/trending/customizer.php:173
+#: framework/features/blocks/about-me/options.php:27
+#: framework/features/blocks/about-me/options.php:194
+#: framework/features/blocks/contact-info/options.php:91
+#: framework/features/blocks/contact-info/options.php:154
+#: framework/features/blocks/contact-info/options.php:215
+#: framework/features/blocks/contact-info/options.php:276
+#: framework/features/blocks/contact-info/options.php:337
+#: framework/features/blocks/contact-info/options.php:398
+#: framework/features/blocks/contact-info/options.php:459
+#: framework/features/blocks/dynamic-data/options.php:64
+#: framework/features/blocks/share-box/options.php:129
+#: framework/features/blocks/socials/options.php:100
 #: framework/features/header/items/account/options.php:25
 #: framework/features/header/items/account/options.php:389
 #: framework/features/header/items/account/options.php:770
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/dynamic-data/utils.js:10
 msgid "Custom"
 msgstr "Personnalisé"
 
@@ -1750,6 +2056,20 @@ msgid "Newsletter"
 msgstr "Newsletter"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:18
+#: framework/features/blocks/about-me/options.php:15
+#: framework/features/blocks/contact-info/options.php:14
+#: framework/features/blocks/contact-info/options.php:60
+#: framework/features/blocks/contact-info/options.php:123
+#: framework/features/blocks/contact-info/options.php:184
+#: framework/features/blocks/contact-info/options.php:245
+#: framework/features/blocks/contact-info/options.php:306
+#: framework/features/blocks/contact-info/options.php:367
+#: framework/features/blocks/contact-info/options.php:428
+#: framework/features/blocks/share-box/options.php:14
+#: framework/features/blocks/socials/options.php:14
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/dynamic-data/hooks/use-dynamic-data-descriptor.js:20
+#: static/js/editor/blocks/query/edit/PostsInspectorControls.js:125
 msgid "Title"
 msgstr "Titre"
 
@@ -1780,6 +2100,7 @@ msgstr "Couleur de la police"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:161
 #: framework/extensions/trending/customizer.php:342
+#: framework/features/blocks/search/options.php:169
 #: framework/features/header/items/account/options.php:533
 #: framework/features/header/items/account/options.php:996
 #: framework/features/header/items/account/options.php:2069
@@ -1817,6 +2138,7 @@ msgstr "Tendance depuis"
 
 #: framework/extensions/trending/customizer.php:210
 #: framework/extensions/trending/customizer.php:224
+#: static/bundle/blocks/blocks.js:11 static/js/editor/blocks/query/Edit.js:169
 msgid "Post Type"
 msgstr "Type de publication"
 
@@ -1825,6 +2147,7 @@ msgid "Trending Posts"
 msgstr "Articles tendance"
 
 #: framework/extensions/trending/customizer.php:8
+#: framework/features/blocks/search/options.php:16
 msgid "Products"
 msgstr "Produits"
 
@@ -1840,6 +2163,8 @@ msgstr "Fonction de transparence"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:162
 #: framework/extensions/trending/customizer.php:343
+#: framework/features/blocks/contact-info/options.php:178
+#: framework/features/blocks/search/options.php:170
 #: framework/features/header/header-options.php:110
 #: framework/features/header/header-options.php:192
 #: framework/features/header/items/account/options.php:534
@@ -1850,6 +2175,7 @@ msgstr "Mobile"
 
 #: framework/extensions/newsletter-subscribe/customizer.php:160
 #: framework/extensions/trending/customizer.php:341
+#: framework/features/blocks/search/options.php:168
 #: framework/features/header/header-options.php:108
 #: framework/features/header/header-options.php:190
 #: framework/features/header/items/account/options.php:532
@@ -1875,6 +2201,13 @@ msgstr "Glissement vers le bas"
 #: framework/extensions/newsletter-subscribe/customizer.php:48
 #: framework/extensions/product-reviews/metabox.php:17
 #: framework/extensions/trending/customizer.php:169
+#: framework/features/blocks/contact-info/options.php:90
+#: framework/features/blocks/contact-info/options.php:153
+#: framework/features/blocks/contact-info/options.php:214
+#: framework/features/blocks/contact-info/options.php:275
+#: framework/features/blocks/contact-info/options.php:336
+#: framework/features/blocks/contact-info/options.php:397
+#: framework/features/blocks/contact-info/options.php:458
 #: framework/features/header/header-options.php:76
 #: framework/features/header/items/account/options.php:385
 #: framework/features/header/items/account/options.php:766
@@ -1931,6 +2264,9 @@ msgid "Registration confirmation will be emailed to you."
 msgstr "La confirmation d’inscription vous sera envoyée par e-mail"
 
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php:262
+#: framework/features/blocks/contact-info/options.php:361
+#: framework/features/blocks/dynamic-data/options.php:138
+#: framework/features/blocks/share-box/options.php:91
 #: framework/features/header/modal/register.php:47
 msgid "Email"
 msgstr "E-mail"
@@ -1999,6 +2335,23 @@ msgstr "Marge de l’élément"
 #: framework/extensions/newsletter-subscribe/admin-static/bundle/newsletter-block.js:1
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:239
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:270
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/about-me/Edit.js:106
+#: static/js/editor/blocks/about-me/Edit.js:134
+#: static/js/editor/blocks/about-me/Edit.js:169
+#: static/js/editor/blocks/about-me/Edit.js:198
+#: static/js/editor/blocks/contact-info/Edit.js:150
+#: static/js/editor/blocks/contact-info/Edit.js:183
+#: static/js/editor/blocks/contact-info/Edit.js:212
+#: static/js/editor/blocks/search/Edit.js:300
+#: static/js/editor/blocks/search/Edit.js:332
+#: static/js/editor/blocks/search/Edit.js:368
+#: static/js/editor/blocks/share-box/Edit.js:100
+#: static/js/editor/blocks/share-box/Edit.js:131
+#: static/js/editor/blocks/share-box/Edit.js:161
+#: static/js/editor/blocks/socials/Edit.js:100
+#: static/js/editor/blocks/socials/Edit.js:131
+#: static/js/editor/blocks/socials/Edit.js:161
 msgid "Hover"
 msgstr "Survol"
 
@@ -2037,6 +2390,28 @@ msgstr "Survol"
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:201
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:230
 #: framework/extensions/newsletter-subscribe/admin-static/js/newsletter-block/Edit.js:261
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/about-me/Edit.js:99
+#: static/js/editor/blocks/about-me/Edit.js:127
+#: static/js/editor/blocks/about-me/Edit.js:160
+#: static/js/editor/blocks/about-me/Edit.js:189
+#: static/js/editor/blocks/contact-info/Edit.js:143
+#: static/js/editor/blocks/contact-info/Edit.js:174
+#: static/js/editor/blocks/contact-info/Edit.js:203
+#: static/js/editor/blocks/search/Edit.js:205
+#: static/js/editor/blocks/search/Edit.js:232
+#: static/js/editor/blocks/search/Edit.js:261
+#: static/js/editor/blocks/search/Edit.js:292
+#: static/js/editor/blocks/search/Edit.js:324
+#: static/js/editor/blocks/search/Edit.js:359
+#: static/js/editor/blocks/search/Edit.js:389
+#: static/js/editor/blocks/search/Edit.js:409
+#: static/js/editor/blocks/share-box/Edit.js:91
+#: static/js/editor/blocks/share-box/Edit.js:122
+#: static/js/editor/blocks/share-box/Edit.js:152
+#: static/js/editor/blocks/socials/Edit.js:91
+#: static/js/editor/blocks/socials/Edit.js:122
+#: static/js/editor/blocks/socials/Edit.js:152
 msgid "Initial"
 msgstr "Initial"
 
@@ -2060,7 +2435,7 @@ msgstr "État par défaut"
 
 #: framework/extensions/cookies-consent/customizer.php:142
 #: framework/extensions/newsletter-subscribe/customizer.php:170
-#: framework/extensions/product-reviews/extension.php:421
+#: framework/extensions/product-reviews/extension.php:422
 #: framework/extensions/trending/customizer.php:395
 #: framework/features/header/header-options.php:203
 #: framework/features/header/items/account/options.php:1107
@@ -2112,6 +2487,14 @@ msgid "Icon Size"
 msgstr "Taille de l’icône"
 
 #: framework/extensions/trending/customizer.php:188
+#: framework/features/blocks/contact-info/options.php:101
+#: framework/features/blocks/contact-info/options.php:164
+#: framework/features/blocks/contact-info/options.php:225
+#: framework/features/blocks/contact-info/options.php:286
+#: framework/features/blocks/contact-info/options.php:347
+#: framework/features/blocks/contact-info/options.php:408
+#: framework/features/blocks/contact-info/options.php:469
+#: framework/features/blocks/search/options.php:86
 #: framework/features/header/items/account/options.php:347
 #: framework/features/header/items/account/options.php:404
 #: framework/features/header/items/account/options.php:745
@@ -2121,11 +2504,13 @@ msgstr "Icône"
 
 #: framework/extensions/cookies-consent/customizer.php:15
 #: framework/extensions/newsletter-subscribe/customizer.php:12
-#: framework/extensions/product-reviews/extension.php:381
+#: framework/extensions/product-reviews/extension.php:382
 #: framework/extensions/product-reviews/metabox.php:6
 #: framework/extensions/trending/customizer.php:110
 #: framework/features/header/header-options.php:6
 #: framework/features/header/items/account/options.php:330
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/query/edit/PostsInspectorControls.js:43
 msgid "General"
 msgstr "Général"
 
@@ -2347,7 +2732,14 @@ msgstr "Page d’accueil"
 msgid "Blog"
 msgstr "Blog"
 
+#: framework/features/blocks/search/options.php:60
+#: framework/features/blocks/search/options.php:66
+#: framework/features/blocks/search/view.php:80
+#: framework/features/blocks/search/view.php:261
 #: framework/features/conditions/rules/pages.php:22
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/query/edit/PatternSelectionModal.js:92
+#: static/js/editor/blocks/search/Preview.js:23
 msgid "Search"
 msgstr "Rechercher"
 
@@ -2356,7 +2748,7 @@ msgid "404"
 msgstr "404"
 
 #: framework/features/conditions/rules/specific.php:38
-#: framework/features/conditions/rules/woo.php:60
+#: framework/features/conditions/rules/woo.php:65
 msgid "Taxonomy ID"
 msgstr "ID de taxonomie"
 
@@ -2375,14 +2767,16 @@ msgid "Post ID"
 msgstr "ID de publication"
 
 #: framework/features/conditions/rules/specific.php:48
+#: static/bundle/blocks/blocks.js:11
+#: static/js/editor/blocks/query/edit/layers/useTaxonomiesLayers.js:69
 msgid "Specific"
 msgstr "Spécifique"
 
-#: framework/features/conditions/rules/cpt.php:60
+#: framework/features/conditions/rules/cpt.php:53
 msgid "Custom Post Types"
 msgstr "Types de publication personnalisés"
 
-#: framework/features/conditions/rules/woo.php:44
+#: framework/features/conditions/rules/woo.php:49
 msgid "Product Tags"
 msgstr "Étiquettes de produit"
 
@@ -2402,7 +2796,7 @@ msgstr "Produit unique"
 msgid "Shop Home"
 msgstr "Accueil de la boutique"
 
-#: framework/features/conditions/rules/woo.php:84
+#: framework/features/conditions/rules/woo.php:89
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
@@ -2410,6 +2804,7 @@ msgstr "WooCommerce"
 msgid "Single Page"
 msgstr "Page unique"
 
+#: framework/features/blocks/search/options.php:7
 #: framework/features/conditions/rules/pages.php:52
 msgid "Pages"
 msgstr "Pages"
@@ -2427,6 +2822,8 @@ msgid "Single Post"
 msgstr "Publication unique"
 
 #: framework/extensions/trending/customizer.php:4
+#: framework/features/blocks/query/block.php:19
+#: framework/features/blocks/search/options.php:6
 #: framework/features/conditions/rules/posts.php:33
 msgid "Posts"
 msgstr "Publications"
@@ -2439,11 +2836,11 @@ msgstr "Basique"
 msgid "Entire Website"
 msgstr "Tout le site"
 
-#: framework/features/conditions/rules/cpt.php:34
+#: framework/features/conditions/rules/cpt.php:27
 msgid "%s Archive"
 msgstr "Archive %s"
 
-#: framework/features/conditions/rules/cpt.php:24
+#: framework/features/conditions/rules/cpt.php:17
 msgid "%s Single"
 msgstr "%s unique"
 
@@ -2483,10 +2880,12 @@ msgstr "Instagram"
 msgid "Dribbble"
 msgstr "Dribbble"
 
+#: framework/features/blocks/share-box/options.php:37
 #: framework/theme-integration.php:222
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
+#: framework/features/blocks/share-box/options.php:19
 #: framework/theme-integration.php:220
 msgid "Facebook"
 msgstr "Facebook"
