@@ -246,6 +246,9 @@ input[type="submit"] {
     flex-direction: column;
  }
 
+ .formulaire-colonne-gauche{
+    border-right: none;
+ }
 
 /* Mobile */
 
